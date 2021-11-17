@@ -5,7 +5,7 @@ def get_random_stream():
     result_str = ''.join(random.choice('ABCDEFGHIJ') for i in range(30))
     return list(result_str)
 
-procesos = ["A","A","B","C","D","D","E","F","G","H","H","I","J","J","A","A","A","B","C","D","D","E","F","G","H","H","I","J","J","A"]
+procesos = get_random_stream()
 procesos_en_memoria = []
 
 marcos = [[],[],[],[],[]]                   #Lista que contendra las listas de los marcos
