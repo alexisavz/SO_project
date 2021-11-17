@@ -69,4 +69,3 @@ print(tabulate(marcos, headers=procesos))
 
 rendimiento = (30-fallos)/30                #Se obtiene el rendimiento
 print("El rendimiento del algoritmo es de: " + str(rendimiento))
-print (fallos)
