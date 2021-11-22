@@ -1,13 +1,9 @@
 from tabulate import tabulate
-import random
-def get_random_stream(num_solicitudes):
-    # elegir entre el rango deseado, en este caso 10 procesos distintos
-    result_str = ''.join(random.choice('ABCDEFGHIJ') for i in range(num_solicitudes))
-    return list(result_str)
 
-def remplazo_FIFO():
 
-    procesos = get_random_stream(num_solicitudes=30)
+def remplazo_FIFO(string_random):
+
+    procesos = string_random
     procesos_en_memoria = []
 
     marcos = [[],[],[],[],[]]                   #Lista que contendra las listas de los marcos
@@ -70,7 +66,6 @@ def remplazo_FIFO():
     marcos.append(lista_fallos)                 # Se adiciona , para visualizacion , la lista que contiene X donde hubo fallos 
     marcos[5].insert(0,"Fallo  : ")
     procesos.insert(0,"Marcos")
-    print(fallos)
     rendimiento = (30-fallos)/30                #Se obtiene el rendimiento
     return rendimiento, tabulate(marcos, headers=procesos)
 

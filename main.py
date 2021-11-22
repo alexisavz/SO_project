@@ -19,4 +19,4 @@ if __name__ == "_main_":
     print("El rendimiento del algoritmo es de: " + str(rendimiento_FIFO))
     print('Utilizando el algoritmo de reemplazo LRU :')
     print(matriz_LRU)
-    print("El rendimiento del algoritmo es de: " + str(rendimiento_LRU))
+
