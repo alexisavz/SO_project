@@ -24,7 +24,7 @@ o	Ej.: A, B, A, C, D, H, E, G, B… </li>
 <b>¿Qué se necesita para ejecutar el código?</b> <br>
 <ul>
   <li>Librería: tabulate </li>
-  <li>Ejecutar el script main.py (Se recomienda desde python3 </li>
+  <li>Ejecutar el script main.py (Se recomienda usar python3) </li>
 </ul>
 
 <b> Video de explicación de código en equipo</b> <br>
