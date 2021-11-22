@@ -22,3 +22,13 @@ o	Ej.: A, B, A, C, D, H, E, G, B… </li>
 
 [drive1]: https://drive.google.com/drive/folders/1PNFy0lgE0JTNaX9VzdxEaNCQb_DLrDY2?usp=sharing
 [codigobase]: 
+
+<b>¿Qué se necesita para ejecutar el código?</b> <br>
+<ul>
+  <li>Librería: tabulate </li>
+</ul>
+
+<b> Video de explicación de código en equipo</b> <br>
+<ul>
+  <li>https://youtu.be/5LwtEwWXL60 </li>
+</ul>
