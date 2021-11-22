@@ -1,5 +1,3 @@
-from tabulate import tabulate
-
 
 def remplazo_FIFO(string_random):
 
@@ -67,7 +65,7 @@ def remplazo_FIFO(string_random):
     marcos[5].insert(0,"Fallo  : ")
     procesos.insert(0,"Marcos")
     rendimiento = (30-fallos)/30                #Se obtiene el rendimiento
-    return rendimiento, tabulate(marcos, headers=procesos)
+    return rendimiento, marcos, procesos
 
 if __name__ == "__main__":
     print('Porfavor ejecute el archivo "main.py" para ver el algoritmo en acción')

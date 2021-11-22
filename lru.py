@@ -1,4 +1,4 @@
-from tabulate import tabulate
+
 
 def lru_method(string_random):
     procesos = string_random
@@ -13,7 +13,6 @@ def lru_method(string_random):
         for j in range(len(marcos)):
             marcos[j].append(0)
 
-    print(range(len(procesos)))
 
     for proceso in range(len(procesos)):
         if (proceso == 0) :                         #Si es el primer proceso simplemente se añade a memoria
@@ -50,6 +49,7 @@ def lru_method(string_random):
                                 procesos_en_memoria.append(procesos[proceso])        # Se añade al final al recien usado
                                 break  
 
+
     #Se agregan los encabezados de la tabla, ademas de especificar el marco para despues imprimirse
     marcos[0].insert(0,"Marco 0: ")
     marcos[1].insert(0,"Marco 1: ")
@@ -60,7 +60,9 @@ def lru_method(string_random):
     marcos[5].insert(0,"Fallo : ")
     procesos.insert(0,"Marcos")
     rendimiento = (30-fallos)/30                #Se obtiene el rendimiento
-    return rendimiento, tabulate(marcos, headers=procesos)
+    return rendimiento, marcos, procesos
+
+
 
 
 if __name__ == "__main__":
