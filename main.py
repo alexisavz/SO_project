@@ -10,13 +10,23 @@ def get_random_stream(num_solicitudes):
     return list(result_str)
 
 solicitudes = get_random_stream(30)
-rendimiento_FIFO , matriz_FIFO = remplazo_FIFO(solicitudes)
-rendimiento_LRU , matriz_LRU = lru_method(solicitudes)
 
-if __name__ == "_main_":
-    print('Utilizando el algoritmo de reemplazo FIFO :')
-    print(matriz_FIFO)
-    print("El rendimiento del algoritmo es de: " + str(rendimiento_FIFO))
-    print('Utilizando el algoritmo de reemplazo LRU :')
-    print(matriz_LRU)
+if __name__ == "__main__":
+    print("Elige que algoritmo quieres ver en pantalla")
+    print("1  -> FIFO")
+    print("2  -> LRU")
+    number = input()
+    if number == "1":
+        rendimiento_FIFO , marcos_FIFO, procesos_FIFO = remplazo_FIFO(solicitudes)
+        print('Utilizando el algoritmo de reemplazo FIFO :')
+        print(tabulate(marcos_FIFO, headers= procesos_FIFO))
+        print("El rendimiento de este algoritmo es: ", rendimiento_FIFO)
+    elif number =="2":
+        rendimiento_LRU , marcos_LRU, procesos_LRU = lru_method(solicitudes)
+        print('Utilizando el algoritmo de reemplazo LRU :')
+        print(tabulate(marcos_LRU, headers= procesos_LRU))
+        print("El rendimiento de este algoritmo es: ", rendimiento_LRU)
+    
+
+  
 
