@@ -4,7 +4,7 @@ def lru_method(string_random):
     procesos = string_random
     procesos_en_memoria = []
 
-    marcos = [[],[],[],[],[]]                   #Lista que contendra las listas de los marcos
+    marcos = [[],[],[]]                   #Lista que contendra las listas de los marcos
     fallos = 0                                  #Numero de fallos
     lista_fallos = []                           #Lista que contiene las posiciones de los fallos
 
@@ -54,12 +54,12 @@ def lru_method(string_random):
     marcos[0].insert(0,"Marco 0: ")
     marcos[1].insert(0,"Marco 1: ")
     marcos[2].insert(0,"Marco 2: ")
-    marcos[3].insert(0,"Marco 3: ")
-    marcos[4].insert(0,"Marco 4: ")
+    # marcos[3].insert(0,"Marco 3: ")
+    # marcos[4].insert(0,"Marco 4: ")
     marcos.append(lista_fallos)
-    marcos[5].insert(0,"Fallo : ")
+    marcos[3].insert(0,"Fallo : ")
     procesos.insert(0,"Marcos")
-    rendimiento = (30-fallos)/30                #Se obtiene el rendimiento
+    rendimiento = (16-fallos)/16               #Se obtiene el rendimiento
     return rendimiento, marcos, procesos
 
 
